@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>验证码</title>
+    <style type="text/css">
+        span{
+            color:#555;
+        }
+        span:hover{
+            color:#777;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <canvas id="canvas" style="width:150px;height:30px;">你的浏览器不支持canvas,请更换浏览器!</canvas>
+    <span onclick="toggleVeritification();">点击刷新</span>
+</div>
+<div>
+    <input id="txt" type="text"/>
+</div>
+<div>
+    <button onclick="checkCode();">验证</button>
+</div>
+<script type="text/javascript" src="test.js"></script>
+<script>
+    var test = new createVeritification();
+    // test.createAnimation();
+    test.createStatic();
+
+    // 点击刷新验证码
+    var toggleVeritification = function(){
+        test.createStatic();
+    };
+
+    // 验证输入是否正确
+    var checkCode = function(){
+        // do sth...
+        if(test.veritificate(document.getElementById("txt").value))
+            alert(true);
+        else alert(false);
+    };
+</script>
+</body>
+</html>
