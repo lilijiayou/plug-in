@@ -1,0 +1,63 @@
+{ 
+   "datatit":[
+   			{
+						"titinfo":"全部商区"
+				},{
+						"titinfo":"全部类型"
+				},{
+						"titinfo":"智能排序"
+				}
+		],
+    "datalist":[
+    		{
+		    		"dataname":"江户和庄工房·雅",
+		    		"datacity":"台东区",
+		    		"history":"741人收藏",
+		    		"distance":"2113.0km",
+		    		"images":"img/a1.png",
+		    		"datainfo":"店铺亮点NO.1地处观光胜地浅草寺本店距离浅草寺后门仅有10000公里"
+		    },{
+		    		"dataname":"松本清新宿三丁目店",
+		    		"datacity":"新宿区 药妆",
+		    		"history":"635人收藏",
+		    		"distance":"2106.8km",
+		    		"images":"img/a2.png",
+		    		"datainfo":"松本清是最大的药妆店这里的额出口数据空间发的v艰松本清是最大的药妆店这里的额出口数据空间发的v艰苦奋斗女将妇女解放局苦奋斗女将妇女解放局"
+		    },{
+		    		"dataname":"银座百药妆",
+		    		"datacity":"新宿区 药妆",
+		    		"history":"511人收藏",
+		    		"distance":"2106.8km",
+		    		"images":"img/a3.png",
+		    		"datainfo":"银座百药妆是最大的药妆店这里的额出口数据空间发的v艰松本清是最大的药妆店这里的额出口数据空间发的v艰苦奋斗女将妇女解放局苦奋斗女将妇女解放局"
+		    },{
+		    		"dataname":"银座百药妆",
+		    		"datacity":"新宿区 药妆",
+		    		"history":"511人收藏",
+		    		"distance":"2106.8km",
+		    		"images":"img/a1.png",
+		    		"datainfo":"银座百药妆是最大的药妆店这里的额出口数据空间发的v艰松本清是最大的药妆店这里的额出口数据空间发的v艰苦奋斗女将妇女解放局苦奋斗女将妇女解放局"
+		    },{
+		    		"dataname":"江户和庄工房·雅",
+		    		"datacity":"台东区",
+		    		"history":"741人收藏",
+		    		"distance":"2113.0km",
+		    		"images":"img/a2.png",
+		    		"datainfo":"店铺亮点NO.1地处观光胜利教科书的副教授积承诺的承诺看风景的老旧的合不合法分就看会电视大厦等多久才能序幕"
+		    },{
+		    		"dataname":"松本清新宿三丁目店",
+		    		"datacity":"新宿区 药妆",
+		    		"history":"635人收藏",
+		    		"distance":"2106.8km",
+		    		"images":"img/a3.png",
+		    		"datainfo":"松本清是最大的药妆店这里的额出口数据空间发的v艰松本清是最大的药妆店这里的额出口数据空间发的v艰苦奋斗女将妇女解放局苦奋斗女将妇女解放局"
+		    },{
+		    		"dataname":"银座百药妆",
+		    		"datacity":"新宿区 药妆",
+		    		"history":"511人收藏",
+		    		"distance":"2106.8km",
+		    		"images":"img/a2.png",
+		    		"datainfo":"银座百药妆是最大的药妆店这里的额出口数据空间发的v艰松本清是最大的药妆店这里的额出口数据空间发的v艰苦奋斗女将妇女解放局苦奋斗女将妇女解放局"
+		    }
+    ]
+}

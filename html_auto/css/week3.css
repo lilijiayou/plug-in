@@ -1,0 +1,178 @@
+@import url(reset.css);
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+html {
+  font-size: 62.5%;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wrap header {
+  width: 100%;
+  height: 9.3rem;
+  background: none;
+}
+.wrap header .head {
+  width: 100%;
+  height: 3.7rem;
+  background: #191b20;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+  line-height: 3.7rem;
+}
+.wrap header .head .head1 {
+  width: 4.1rem;
+  height: 3.7rem;
+  background: none;
+  background: url("../img/fl.png") no-repeat left center;
+  padding-left: 1.3rem;
+  box-sizing: border-box;
+}
+.wrap header .head .head2 {
+  -webkit-box-flex: 1;
+  font-size: 1.6rem;
+}
+.wrap header .head .head3 {
+  width: 4.1rem;
+  height: 3.7rem;
+  background: none;
+  background: url("../img/fr.png") no-repeat right center;
+}
+.wrap header .seach {
+  width: 100%;
+  height: 5.3rem;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 1rem 1rem 0 1rem;
+  box-sizing: border-box;
+}
+.wrap header .seach .left {
+  width: 4.1rem;
+  height: 2.5rem;
+  background: none;
+  line-height: 2.5rem;
+}
+.wrap header .seach .right {
+  -webkit-box-flex: 1;
+}
+.wrap header .seach .right .soso {
+  width: 100%;
+  height: 2.5rem;
+  background: #eeeced;
+  border-radius: 2.5rem;
+  padding-left: 0.8rem;
+  box-sizing: border-box;
+}
+.wrap header .seach .right .soso input {
+  width: auto;
+  height: 2.5rem;
+  background: none;
+  padding-left: 1.5rem;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+.wrap header .LL {
+  width: 100%;
+  height: 0.7rem;
+  background: #eeeced;
+}
+.wrap .tetle {
+  width: 100%;
+  height: 3.6rem;
+  background: none;
+  border-bottom: 1px solid #eeeced;
+}
+.wrap .tetle ul {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding-top: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  color: #eeeced;
+}
+.wrap .tetle ul li {
+  height: 1.6rem;
+  -webkit-box-flex: 1;
+  color: #18181c;
+}
+.wrap .tetle ul li img {
+  padding-left: 0.5rem;
+  box-sizing: border-box;
+}
+.wrap section {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  color: #a7b3bb;
+  overflow: hidden;
+}
+.wrap section .main {
+  width: 100%;
+  height: 10rem;
+  background: none;
+  border-bottom: 1px solid #eeeced;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.wrap section .main dl {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 0.9rem 0;
+  box-sizing: border-box;
+}
+.wrap section .main dl dd {
+  padding-left: 1rem;
+  box-sizing: border-box;
+}
+.wrap section .main dl dd li:first-child {
+  color: #302f32;
+  font-size: 1.4rem;
+}
+.wrap section .main dl dd .sp2 {
+  padding-left: 1.2rem;
+  box-sizing: border-box;
+}
+.wrap section .main dl dd li:nth-child(3) {
+  padding-top: 0.7rem;
+  box-sizing: border-box;
+}
+.wrap section .main p {
+  width: 100%;
+  height: auto;
+  background: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  white-space: nowrap;
+}
+.wrap footer {
+  width: 100%;
+  height: 4.3rem;
+  background: none;
+  border-top: 1px solid #e6e6e6;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  text-align: center;
+}
+.wrap footer dl {
+  -webkit-box-flex: 1;
+  padding-top: 0.8rem;
+  box-sizing: border-box;
+}
+.wrap footer dl:nth-child(2) {
+  color: #ff9ca2;
+}

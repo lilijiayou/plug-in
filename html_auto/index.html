@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/week3.css"/>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script src="js/auto.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <div class="head">
+            <div class="head1">返回</div>
+            <div class="head2">商店</div>
+            <div class="head3"></div>
+        </div>
+        <div class="seach">
+            <div class="left">
+                返回
+            </div>
+            <div class="right">
+                <div class="soso">商店 <input type="text" placeholder="搜索：商品/品牌"/></div>
+            </div>
+        </div>
+        <div class="LL"></div>
+    </header>
+    <div class="tetle">
+        <ul>
+        <li>全部商品<img src="img/x.png" alt=""/></li>|
+        <li>全部类型<img src="img/x.png" alt=""/></li>|
+        <li>智能排行<img src="img/x.png" alt=""/></li>
+        </ul>
+    </div>
+    <section>
+        <div>
+            <div class="main_wrap">
+                <div class="main">
+                    <!--<dl>-->
+                    <!--<dt><img src="img/a2.png" alt=""/></dt>-->
+                    <!--<dd><ul>-->
+                    <!--<li>江户和装公房.雅</li>-->
+                    <!--<li>东台区</li>-->
+                    <!--<li><span class="sp1"><i></i>741人收藏</span>-->
+                    <!--<span class="sp2"><i></i>2133.9KM</span></li>-->
+                    <!--</ul></dd>-->
+                    <!--</dl>-->
+                    <!--<p>店铺亮点NO.1地面 节点删除看见你的科技部你的看见你的科技部你的科看见你的科技部你的科看见你的科技部你的科科</p>-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <dl>
+            <dt><img src="img/b1.png" alt=""/></dt>
+            <dd>热门</dd>
+        </dl>
+        <dl>
+            <dt><img src="img/b2.png" alt=""/></dt>
+            <dd>商店</dd>
+        </dl>
+        <dl>
+            <dt><img src="img/b3.png" alt=""/></dt>
+            <dd>热门</dd>
+        </dl>
+        <dl>
+            <dt><img src="img/b4.png" alt=""/></dt>
+            <dd>热门</dd>
+        </dl>
+        <dl>
+            <dt><img src="img/b5.png" alt=""/></dt>
+            <dd>热门</dd>
+        </dl>
+    </footer>
+</div>
+</body>
+</html>
+
+<script>
+    $(function () {
+        //    滚动条
+        var myscroll = new IScroll("section", {
+            scrolllbars: true,
+            disableMouse: true,
+            disablePointer: true,
+            scrollbars: 'custom'
+        });
+        $.ajax({
+            url: "data.json",
+            cache: true,
+            success: function (data) {
+                console.log(data);
+                //  title渲染
+                var ter = '';
+                $.each(data.datatit, function (key, val) {
+                    ter += '<li>' + val.titinfo + '<img src="img/x.png" alt=""/></li>|'
+                });
+                $(".tetle>ul").html(ter);
+                //    主题渲染
+                var html = '';
+                $.each(data.datalist, function (k, v) {
+//                    console.log(k, v);
+                    html += '<div class="main"><dl><dt><img src="' + v.images + '" alt=""/></dt>'
+                            + '<dd><ul><li>' + v.dataname + '</li><li>' + v.datacity + '</li><li><span class="sp1"><i><img src="img/xing.jpg" alt=""/></i>' + v.history + '</span>'
+                            + '<span class="sp2"><i><img src="img/dao.jpg" alt=""/></i>  ' + v.distance + '</span></li></ul></dd>'
+                            + '</dl><p>' + v.datainfo + '</p></div>'
+                });
+                $("section .main_wrap").html(html);
+            }
+        });
+    })
+</script>
