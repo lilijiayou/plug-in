@@ -44,7 +44,7 @@ var myPage = function (obj) {
            for(var j = $page-2; j <= $page+2; j++ ){
                tempStr += "<span ";
                if(j == page){
-                   tempStr += "style='background-color:red'";
+                   tempStr += "style='background-color:pink'";
                }
                tempStr +=  " class='"+that.pageclass+"'>"+j+"</span>";
            }
